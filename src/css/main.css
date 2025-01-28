@@ -100,6 +100,21 @@ img {
   font-weight: 400;
 }
 
+.load-more-btn {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 125px;
+  height: 40px;
+}
+
+.load-more-btn.is-hidden {
+  display: none;
+}
+
 .load {
   font-size: 18px;
   color: gray;

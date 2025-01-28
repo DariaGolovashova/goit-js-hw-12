@@ -1,5 +1,5 @@
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+// import iziToast from 'izitoast';
+// import 'izitoast/dist/css/iziToast.min.css';
 
 export const createGalleryCardTemple = images=> {
     return images
