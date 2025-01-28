@@ -111,7 +111,8 @@ function renderGallery(images) {
   gallery.insertAdjacentHTML('beforeend', markup);
 
   if (!lightbox) {
-    lightbox = new SimpleLightbox('.gallery-item', {
+    lightbox = new SimpleLightbox('.gallery a' ,//gallery-item', 
+      {
       captions: true,
       captionsData: 'alt',
       captionDelay: 250,
