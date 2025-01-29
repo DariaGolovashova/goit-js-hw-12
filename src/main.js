@@ -56,7 +56,7 @@ async function onSearch(event) {
 
     gallery.insertAdjacentHTML('beforeend', createGalleryCardTemple(data.hits));
     if (!lightbox) {
-      lightbox = new SimpleLightbox('.gallery a', {
+      lightbox = new SimpleLightbox('.gallery-item', {
         captions: true,
         captionsData: 'alt',
         captionDelay: 250,
