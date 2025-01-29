@@ -62,7 +62,7 @@ async function onSearch(event) {
         captionDelay: 250,
       });
     } else {
-      lightbox.refresh(); // Оновлюємо lightbox після кожного нового рендеру
+      lightbox.refresh(); 
     }
     
     iziToast.success({
