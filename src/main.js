@@ -55,6 +55,16 @@ async function onSearch(event) {
 
 
     gallery.insertAdjacentHTML('beforeend', createGalleryCardTemple(data.hits));
+    if (!lightbox) {
+      lightbox = new SimpleLightbox('.gallery a', {
+        captions: true,
+        captionsData: 'alt',
+        captionDelay: 250,
+      });
+    } else {
+      lightbox.refresh(); // Оновлюємо lightbox після кожного нового рендеру
+    }
+    
     iziToast.success({
       title: 'Success',
       message: `Found ${data.totalHits} images!`,
